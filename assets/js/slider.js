@@ -4,5 +4,5 @@ $(".slider").owlCarousel({
   nav: true,
   dots: false,
   loop: true,
-  autoPlay: 3000,
+  autoPlay: 5000,
 });
