@@ -1,8 +1,8 @@
 $(".slider").owlCarousel({
-  items: 3,
-  singleItem: true,
-  nav: true,
-  dots: false,
-  loop: true,
-  autoPlay: 5000,
+ navigation : true,
+    items : 1, 
+    loop:true,
+       nav:true,
+    animateOut: 'fadeOut',
+       animateIn: 'fadeIn',
 });
