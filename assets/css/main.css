@@ -158,13 +158,14 @@ body {
   .copyright {
     margin: 0 auto;
     padding: 30px 0px;
-    line-height: unset !important;
     text-align: center;
   }
   .copyright p {
     display: flex !important;
     flex-direction: column;
-    line-height: 30px;
+  }
+  .copyright b {
+    padding-top: 10px;
   }
 }
 
@@ -177,9 +178,6 @@ body {
   }
   .copyright {
     flex-direction: column;
-  }
-  .copyright b {
-    padding: 0px !important;
   }
 }
 
@@ -326,3 +324,7 @@ html {
   background-size: cover;
 }
 
+html::-webkit-scrollbar-track {border-radius: 4px;}
+html::-webkit-scrollbar {width: 6px;}
+html::-webkit-scrollbar-thumb {border-radius: 4px;background: #f0f2f5;}
+html:hover::-webkit-scrollbar-thumb {background: #6a7d9b;}
