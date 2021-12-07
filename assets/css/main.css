@@ -27,8 +27,8 @@ html.after {
   top: -100%;
 }
 .center {
-  position: absolute;
-  top: 100px;
+  position: relative;
+  height: 100%;
   left: 0px;
   right: 0px;
   bottom: 0px;
@@ -104,31 +104,35 @@ body {
     center center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
-  top: 0;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
   bottom: 0;
   left: 0;
-  min-height: 360px;
   z-index: 999;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .plash-title {
   color: #fff;
   font-size: 3em;
-  margin-top: 200px;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 1s;
+  padding-bottom: 7px;
 }
 .plash-text {
   color: #fff;
   font-size: 3em;
-  margin-top: 100px;
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   animation-delay: 2s;
+  padding-top: 7px;
 }
 
 @media screen and (max-height: 866px) {
@@ -328,3 +332,16 @@ html::-webkit-scrollbar-track {border-radius: 4px;}
 html::-webkit-scrollbar {width: 6px;}
 html::-webkit-scrollbar-thumb {border-radius: 4px;background: #f0f2f5;}
 html:hover::-webkit-scrollbar-thumb {background: #6a7d9b;}
+
+
+
+.swiper-button-next, .swiper-button-prev {
+  background: #fff !important;
+  padding: 10px !important;
+  color: #000 !important;
+  border-radius: 100% !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 25px !important;
+}
